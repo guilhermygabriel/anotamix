@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnotaMix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header></header>
+ 
+ <div class="app">
+
+
+     <h1 class="logo"><img src="logo.png" alt="logo"></h1>
+
+   
+    <h2>Lista de Anotações</h2>
+   <div class="container">
+    <h3>Criar Anotação</h3>
+    
+     <label for="assunto">Assunto</label>
+        <select class="assunto"name="assunto" id="assunto" required placeholder=" ">
+          <option value="">Selecione</option >
+          <option value="estudos">Estudos</option>
+          <option value="trabalho">Trabalho</option>
+          <option value="casa">Casa</option>
+          <option value="pessoal">Pessoal</option>  
+        </select>
+        <span id="erroAssunto" class="erro"></span>
+        <br>
+        <label for="relevancia">Relevância</label>
+         <select class="relevancia"name="relevancia" id="relevancia" required placeholder=" ">
+          <option value="">Selecione</option >
+          <option value="baixa">Baixa</option>
+          <option value="media">Media</option>
+          <option value="alta">Alta</option>
+         
+        </select>
+             <span id="erroRelevancia" class="erro"></span>
+        <label>Faça sua anotação</label>
+        
+  
+       <textarea id="anotacao"  placeholder="Digite sua anotação aqui..."></textarea>
+       <br> 
+       <span id="erroTexto" class="erro"></span>
+       <div class="area-botao">
+       <button class="add" onclick="adicionar()">adicionar</button>
+      </div>      
+    </div>
+  <div class="caixa-lista">
+    <h3 id="tituloAnotacoes"></h3>
+    <div id="minhaLista"> 
+    <h3>Você não tem Anotações no Momento</h3>
+     <a href="index.html"><button>criar anotação</button></a>
+    </div>
+     <div id="lista"></div>  
+  </div>
+
+</div>
+<footer>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,210 @@
+
+/*DIV MAIOR*/
+
+.app{
+    width: 95%;
+    max-width: 700px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.08);
+    margin: 5px auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#8B6CFF;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    gap: 40px; 
+    margin: 0;
+    padding: 10px;
+}
+
+/* LOGO */
+
+.logo{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img{
+    width: 220px;
+}
+
+/* TITULO */
+
+h2{
+    margin-bottom: 10px;
+    color: #1f2340;
+}
+
+/* CAIXA PRINCIPAL */
+
+.container{
+    background:white;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.08);
+    margin-bottom: 10px;
+    border: 1px solid #1f2340;
+    margin-bottom: 15px;
+}
+
+/* TITULOS */
+
+h3,
+h4{
+    margin-bottom: 10px;
+    color: #8B6CFF;
+}
+
+/* INPUTS */
+
+input,
+select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* TEXTAREA */
+
+textarea{
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+    margin-top: 5px;
+}
+
+/* BOTÃO ADICIONAR */
+
+button{
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background: #8B6CFF;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    
+}
+.area-botao{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button:hover{
+    background: #1f2340;
+}
+
+/* LISTA */
+
+.caixa-lista{
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.08);
+    border: 1px solid #1f2340;
+    margin-bottom: 10px;
+}
+
+/* CARD DA ANOTAÇÃO */
+
+#minhaLista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTOES */
+
+.botoes{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/*CENTRALIZAR DIV SEM ANOTAÇÃO*/
+#minhaLista{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    text-align: center;
+}
+
+label{
+    color: #1f2340;
+}
+/*DIV DA ANOTAÇÃO*/
+.data,
+.assunto-card,
+.relevancia{
+
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #f5f3ff;
+    border: 1px solid #e3dcff;
+    line-height: 24px;
+}
+.texto{
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    background: #f5f3ff;
+    border: 1px solid #e3dcff;
+    line-height: 24px;
+    word-break: break-word;
+
+}
+/*CAMPO VAZIO*/
+
+.erro{
+   color: red;
+   font-size: 13px;
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 10px;
+}
+#erroEditar{
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 600px){
+    .app{
+        width: 100%;
+        padding: 10px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    .area-botao{
+        justify-content: center;
+    }
+}
