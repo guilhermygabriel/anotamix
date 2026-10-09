@@ -16,11 +16,9 @@ O **AnotaMix** é uma aplicação web desenvolvida para facilitar a organizaçã
 - **CSS3** — Estilização e interface.
 - **JavaScript** — Funcionalidades e manipulação do DOM.
 
-## 💻 Como executar
+## 🌐 Acesse o projeto
 
-1. Clone ou baixe este repositório.
-2. Abra o arquivo `index.html` no navegador.
-3. Comece a criar e organizar suas anotações.
+🔗 [Clique aqui para acessar o AnotaMix online](https://guilhermygabriel.github.io/anotamix/)
 
 ## 🎯 Objetivo
 
